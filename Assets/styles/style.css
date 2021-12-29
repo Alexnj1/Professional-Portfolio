@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     text-decoration: none;
-    scroll-padding: 70px;
+    scroll-padding: 78px;
     list-style: none;
 }
 
@@ -18,6 +18,10 @@ body {
     background-attachment: fixed;
 }
 
+a {
+    color: var(--primary-color);
+}
+
 .section-header {
     font-size: 30px;
     text-align: center;
@@ -31,6 +35,7 @@ body {
 
 header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     position: sticky;
     top: 0;
@@ -44,7 +49,7 @@ header {
 header h1 {
     font-size: 25px;
     color: var(--primary-color);
-    margin-left: 20px;
+    margin: 25px 0 25px 20px;
 }
 
 header nav ul {
@@ -59,6 +64,12 @@ header nav ul a {
     margin: 0 10px 0 10px;
     color: var(--primary-color);
     margin-right: 20px;
+    padding: 5px;
+    
+}
+
+header nav ul a:hover {
+   border-bottom: solid 3px var(--primary-color);
 }
 
 .hero {
@@ -77,6 +88,7 @@ header nav ul a {
 
 .id div h2 {
     text-align: center;
+    font-size: 25px;
 }
 
 .intro {
@@ -109,14 +121,79 @@ header nav ul a {
 .bio p {
     text-align: justify;
     font-size: 18px;
+    padding: 0 60px 0 60px;
 }
 
 .about-me-links {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
 .about-me-links div {
-    background-color: turquoise; /*change this later*/
+ /*change this later*/
     padding: 0 10px 10px;
+}
+
+.about-me-links div:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+.about-me-links div h4 {
+    text-align: center;
+    font-size: 18px;
+}
+
+/*END ABOUT ME*/
+
+/*PROJECTS*/
+
+.project-showcase {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+    border: solid 3px var(--primary-color);
+    padding: 20px;
+}
+
+.project-one img {
+    width: 800px;
+    height: 400px;
+    padding: 0 20px 0 20px;
+}
+
+.project-one-bio {
+    padding: 0 20px 0 20px;
+}
+
+.project-one-bio h3 {
+    
+    text-align: center;
+    padding-bottom: 5px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.project-one-bio h3:hover {
+    border-bottom: solid var(--primary-color) 2px;
+}
+
+.my-projects h2 {
+    text-align: center;
+}
+
+.other-projects {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.other-projects .secondary-projects{
+    padding: 0 10px 10px 10px;
+}
+
+.other-projects .secondary-projects:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
 }
