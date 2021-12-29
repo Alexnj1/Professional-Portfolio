@@ -1,34 +1,55 @@
 * {
     box-sizing: border-box;
     text-decoration: none;
+    scroll-padding: 70px;
+    list-style: none;
+}
+
+:root {
+  --primary-color: rgb(61, 3, 3);
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial Narrow, Helvetica, sans-serif;
+    font-weight: bold;
     margin: 0;
+    background-image: url(../Photos/BG-IMAGE.jpg);
+    background-size: cover;
+    background-attachment: fixed;
 }
+
+.section-header {
+    font-size: 30px;
+    text-align: center;
+    color: var(--primary-color);
+    margin: 40px 30% 40px;
+    border-bottom: var(--primary-color) solid;
+    padding-bottom: 10px;
+}
+
+/* HEADER AND HERO*/
 
 header {
     display: flex;
     justify-content: space-between;
-    background-color: gray;
     position: sticky;
     top: 0;
     background-image: url(../Photos/BG-IMAGE.jpg);
     background-size: cover;
     background-position: top;
-    background-attachment: local;
+    background-attachment: scroll;
+    border-bottom: var(--primary-color) solid 2px;
 }
 
 header h1 {
     font-size: 25px;
-    color: darkred;
+    color: var(--primary-color);
+    margin-left: 20px;
 }
 
 header nav ul {
     display: flex;
     justify-content: space-between;
-    list-style: none;
     font-size: 20px;
     font-weight: bold;
 }
@@ -36,29 +57,66 @@ header nav ul {
 header nav ul a {
     justify-content: space-evenly;
     margin: 0 10px 0 10px;
-    color: darkred;
+    color: var(--primary-color);
+    margin-right: 20px;
 }
 
 .hero {
-    background-image: url("../Photos/BG-IMAGE.jpg");
     background-size: cover;
-    background-attachment: scroll;
-    background-position: 80%;
+    background-attachment: fixed;
+    background-position: 20% 1%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.hero .id img {
+    height: 300px;
+    border-radius: 80px;
+}
+
 .id div h2 {
-    margin-top: 0;
     text-align: center;
 }
 
 .intro {
-    padding: auto;
+    margin: 20px 25%;
     text-align: justify;
 }
 
 .intro h3 {
     text-align: center;
+    font-size: 25px;
+}
+
+.intro p{
+    font-size: 18px;
+}
+
+/*END HEADER AND HERO*/
+
+/*ABOUT ME*/
+
+.about-me {
+    padding: 0 40px;
+}
+
+.bio h3{
+    text-align: center;
+    font-size: 25px;
+}
+
+.bio p {
+    text-align: justify;
+    font-size: 18px;
+}
+
+.about-me-links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-me-links div {
+    background-color: turquoise; /*change this later*/
+    padding: 0 10px 10px;
 }
