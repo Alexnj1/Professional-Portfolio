@@ -13,7 +13,7 @@ body {
     font-family: Arial Narrow, Helvetica, sans-serif;
     font-weight: bold;
     margin: 0;
-    background-image: url(../Photos/BG-IMAGE.jpg);
+    background-image: url(../Photos/Permanent-images/BG-IMAGE.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
@@ -39,7 +39,7 @@ header {
     justify-content: space-between;
     position: sticky;
     top: 0;
-    background-image: url(../Photos/BG-IMAGE.jpg);
+    background-image: url(../Photos/Permanent-images/BG-IMAGE.jpg);
     background-size: cover;
     background-position: top;
     background-attachment: scroll;
@@ -131,6 +131,11 @@ header nav ul a:hover {
     justify-content: space-around;
 }
 
+.about-me-links img {
+    border-radius: 15px;
+    border: solid 5px
+}
+
 .about-me-links div {
  /*change this later*/
     padding: 0 10px 10px;
@@ -181,8 +186,8 @@ header nav ul a:hover {
     font-size: 25px;
     text-align: center;
     padding-bottom: 5px;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 380px;
+    margin-right: 380px;
 }
 
 .project-one-bio p {
@@ -212,6 +217,11 @@ header nav ul a:hover {
     border-radius: 15px;
 }
 
+.other-projects .secondary-projects img {
+    border-radius: 15px;
+    border: solid 5px;
+}
+
 .other-projects .secondary-projects:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 1);
 }
@@ -220,7 +230,77 @@ header nav ul a:hover {
 
 /*REACH OUT*/
 
-.reach-out-links {
+.reach-out-content {
     display: flex;
     justify-content: space-around;
+}
+
+.general-contact-info h3 {
+    font-size: 30px;
+    color: var(--primary-color);
+}
+
+.general-contact-info address {
+    font-size: 18px;
+}
+
+.reach-out-links {
+    font-size: 30px;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.reach-out-content ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 0;
+}
+
+.reach-out-content ul a {
+    padding: 0 20px 0 20px;
+}
+
+.logo{
+    height: 50px
+}
+
+.GM-area {
+    padding: 5px;
+}
+
+.GH-area {
+    padding: 5px 10px 0 10px;
+}
+
+.LI-area {
+    padding: 5px 10px 0 10px;
+}
+
+.reach-out-content ul li {
+    font-size: 20px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.reach-out-content ul li:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+/*REACH OUT*/
+
+/*FOOTER*/
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-top: var(--primary-color) solid 3px;
+}
+
+footer p {
+    font-size: 20px;
+    color: var(--primary-color);
+    padding: 0 20px 0 20px;
 }
