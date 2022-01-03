@@ -49,7 +49,7 @@ header {
 header h1 {
     font-size: 25px;
     color: var(--primary-color);
-    margin: 25px 0 25px 20px;
+    margin: 25px 0 25px 10px;
 }
 
 header nav ul {
@@ -65,7 +65,7 @@ header nav ul a {
     color: var(--primary-color);
     margin-right: 20px;
     padding: 5px;
-    
+    transition-duration: 0.2s;
 }
 
 header nav ul a:hover {
@@ -133,13 +133,19 @@ header nav ul a:hover {
 
 .about-me-links img {
     border-radius: 15px;
-    border: solid 5px
+    border: solid 2px;
+    transition-duration: 0.2s;
+}
+
+.about-me-links img:hover {
+    border: solid 5px;
 }
 
 .about-me-links div {
  /*change this later*/
     padding: 0 10px 10px;
     border-radius: 15px;
+    transition-duration: 0.2s;
 }
 
 .about-me-links div:hover {
@@ -170,24 +176,27 @@ header nav ul a:hover {
     height: auto;
     width: auto;
     padding: 0 0px 0 0px;
-    border: solid 5px;
+    border: solid 2px;
     border-radius: 15px;
+    transition-duration: 0.2s;
 }
 
 .project-one img:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    border: solid 6px;
 }
 
 .project-one-bio {
     padding: 0 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
-.project-one-bio h3 {
+.project-one-bio h3  {
     font-size: 25px;
     text-align: center;
     padding-bottom: 5px;
-    margin-left: 380px;
-    margin-right: 380px;
 }
 
 .project-one-bio p {
@@ -195,11 +204,13 @@ header nav ul a:hover {
     text-align: justify;
 }
 
-.project-one-bio h3:hover {
+/*.project-one-bio h3:hover {
     border-bottom: solid var(--primary-color) 2px;
-}
+    margin-left: 380px;
+    margin-right: 380px;
+} leaving this out for now*/
 
-.my-projects h2 {
+.my-projects h3 {
     text-align: center;
     font-size: 25px;
 }
@@ -215,15 +226,21 @@ header nav ul a:hover {
 .other-projects .secondary-projects{
     padding: 0 10px 10px 10px;
     border-radius: 15px;
+    transition-duration: 0.2s;
 }
 
 .other-projects .secondary-projects img {
     border-radius: 15px;
-    border: solid 5px;
+    border: solid 2px;
+    transition-duration: 0.2s;
 }
 
 .other-projects .secondary-projects:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+.other-projects .secondary-projects img:hover {
+    border: solid 5px;
 }
 
 /*END PROJECTS*/
@@ -282,6 +299,7 @@ header nav ul a:hover {
     line-height: 35px;
     text-align: center;
     border-radius: 15px;
+    transition-duration: 0.2s;
 }
 
 .reach-out-content ul li:hover {
@@ -303,4 +321,136 @@ footer p {
     font-size: 20px;
     color: var(--primary-color);
     padding: 0 20px 0 20px;
+}
+
+.button-section {
+    display: flex;
+}
+
+button {
+    margin: 10px 10px 10px 10px;
+    border-radius: 15px;
+    height: auto;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    font-size: 15px;
+    font-weight: bold;
+    background-image: url(../Photos/Permanent-images/BG-IMAGE.jpg);
+    background-position: right;
+    color: var(--primary-color);
+    font-family: Arial Narrow, Helvetica, sans-serif;
+    padding: 10px 5px 10px 5px;
+    border: solid var(--primary-color) 2px;
+}
+
+button:hover {
+    background-color: var(--primary-color);
+    color: white;
+    border: solid white 2px;
+}
+/*END FOOTER*/
+
+/*MEDIA QUERIES FOR SMALL SCREENS*/
+
+@media screen and (max-width:980px) {
+    .intro {
+        margin: 20px 15%;
+    }
+
+    .intro p {
+        line-height: 30px;
+    }
+
+    .bio p {
+        line-height: 30px;
+    }
+
+    footer p {
+        margin-top: 25px;
+    }
+
+    button {
+        background-color: var(--primary-color);
+        background-image: none;
+        color: white;
+    }
+}
+
+@media screen and (max-width:768px) {
+    header {
+        height: auto;
+        justify-content: space-around;
+    }
+    
+    header h1 {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    header nav ul {
+        margin-top: 15px;
+    }
+
+    header nav ul li {
+        font-size: 20px;
+    }
+    
+    .bio h3 {
+        font-size: 30px;
+    }
+
+    
+    .reach-out-content .border-left-MQ {
+        border-left: solid var(--primary-color) 2px;
+        margin-bottom: 15px;
+    }
+
+    .project-one-bio p {
+        line-height: 30px;
+    }
+
+    .section-header {
+        font-size: 35px;
+    }
+
+    address {
+        line-height: 30px;
+    }
+
+    footer p {
+        font-size: 15px;
+    }
+    
+    .button-section button p {
+        font-size: 15px;
+        margin: 5px 0 5px 0;
+        padding: 0 5px  0 5px;
+    }
+
+}
+
+@media screen and (max-width:670px) {
+    .general-contact-info {
+        margin: 0 20px 0 20px;
+    }
+}
+
+@media screen and (max-width:435px) {
+    header {
+        height: auto;
+        position: relative;
+    }
+
+    header h1 {
+        margin-left: 0%;
+        font-size: 25px;
+    }
+
+    header nav ul {
+        padding-left: 10px;
+    }
+
+    header nav ul li {
+        font-size: 17px;
+    }
 }
