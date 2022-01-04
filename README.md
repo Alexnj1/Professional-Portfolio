@@ -10,6 +10,10 @@
 
 ### This website, the projects displayed within it, and the actual repository itself, serves as a deeper look into my progression and what I am capable of. Enjoy!
 
+## Built with
+
+### HTML and CSS
+
 ## Links
 
 ### https://alexnj1.github.io/Professional-Portfolio/
