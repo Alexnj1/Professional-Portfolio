@@ -104,6 +104,7 @@ header nav ul a:hover {
 
 .intro p{
     font-size: 20px;
+    line-height: 30px;
 }
 
 /*END HEADER AND HERO*/
@@ -123,6 +124,7 @@ header nav ul a:hover {
     text-align: justify;
     font-size: 20px;
     padding: 0 60px 0 60px;
+    line-height: 30px;
 }
 
 .about-me-links {
@@ -171,6 +173,7 @@ header nav ul a:hover {
 }
 
 .project-one img {
+    background-image: url(../Photos/Permanent-images/run-buddy.png);
     max-width: 100%;
     max-height: 500px;
     height: auto;
@@ -208,7 +211,7 @@ header nav ul a:hover {
     border-bottom: solid var(--primary-color) 2px;
     margin-left: 380px;
     margin-right: 380px;
-} leaving this out for now*/
+} leaving this out for now, may just delete later*/
 
 .my-projects h3 {
     text-align: center;
@@ -383,12 +386,14 @@ button:hover {
     }
     
     header h1 {
-        font-size: 20px;
+        font-size: 25px;
         margin-top: 20px;
+        margin-left: 0;
     }
 
     header nav ul {
         margin-top: 15px;
+        padding-left: 10px;
     }
 
     header nav ul li {
@@ -435,7 +440,28 @@ button:hover {
     }
 }
 
+@media screen and (max-width:579px) {
+    footer {
+        justify-content: space-around;
+        flex-direction: column;
+        line-height: 5px;
+    }
+
+    footer p {
+        text-align: center;
+    }
+    
+    .button-section {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 @media screen and (max-width:435px) {
+    * {
+        scroll-padding: 10px;
+    }
+    
     header {
         height: auto;
         position: relative;
@@ -452,5 +478,81 @@ button:hover {
 
     header nav ul li {
         font-size: 17px;
+    }
+
+    .intro {
+        margin: 20px 10%;
+    }
+
+    .bio p {
+        padding: 0;
+    }
+
+    .about-me-links div h4 {
+        font-size: 25px;
+    }
+
+    .about-me-links img {
+        height: 250px;
+    }
+
+    footer {
+        justify-content: space-around;
+    }
+
+    footer p {
+        font-size: 20px;
+    }
+
+    .button-section {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:375px) {
+    * {
+        scroll-padding: 10px;
+    }
+    
+    .section-header {
+        font-size: 30px;
+    }
+    
+    .id div h2 {
+        font-size: 30px;
+    }
+
+    .hero .id img {
+        height: 250px;
+    }
+
+    .intro h3 {
+        font-size: 25px;
+    }
+
+    .bio h3 {
+        font-size: 28px;
+    }
+
+    .about-me-links img {
+        height: 200px;
+    }
+
+    .other-projects img {
+        height: 200px;
+    }
+
+    .general-contact-info {
+        margin-right: 10px;
+    }
+
+    .general-contact-info h3, .reach-out-links {
+        font-size: 25px;
+    }
+
+    footer p {
+        font-size: 15px;
+        line-height: 2px;
     }
 }
