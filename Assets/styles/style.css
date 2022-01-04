@@ -480,8 +480,20 @@ button:hover {
         font-size: 17px;
     }
 
+    .id div h2 {
+        font-size: 30px;
+    }
+
+    .hero .id img {
+        height: 250px;
+    }
+
     .intro {
         margin: 20px 10%;
+    }
+
+    .intro h3 {
+        font-size: 25px;
     }
 
     .bio p {
@@ -493,7 +505,23 @@ button:hover {
     }
 
     .about-me-links img {
-        height: 250px;
+        height: 200px;
+    }
+
+    .other-projects img {
+        height: 200px;
+    }
+
+    .general-contact-info {
+        text-align: center;
+    }
+    
+    .reach-out-content {
+        flex-direction: column;
+    }
+
+    .reach-out-content .border-left-MQ {
+        border-left: none;
     }
 
     footer {
@@ -501,7 +529,7 @@ button:hover {
     }
 
     footer p {
-        font-size: 20px;
+        font-size: 17px;
     }
 
     .button-section {
@@ -544,7 +572,15 @@ button:hover {
     }
 
     .general-contact-info {
-        margin-right: 10px;
+        text-align: center;
+    }
+    
+    .reach-out-content {
+        flex-direction: column;
+    }
+
+    .reach-out-content .border-left-MQ {
+        border-left: none;
     }
 
     .general-contact-info h3, .reach-out-links {
@@ -554,5 +590,19 @@ button:hover {
     footer p {
         font-size: 15px;
         line-height: 2px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .general-contact-info {
+        text-align: center;
+    }
+    
+    .reach-out-content {
+        flex-direction: column;
+    }
+
+    .reach-out-content .border-left-MQ {
+        border-left: none;
     }
 }
