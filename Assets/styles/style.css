@@ -135,13 +135,14 @@ header nav ul a:hover {
 
 .about-me-links img {
     border-radius: 15px;
-    border: solid 2px;
+    max-width: 100%;
+    max-height: 250px;
     transition-duration: 0.2s;
 }
 
-.about-me-links img:hover {
+/* .about-me-links img:hover {
     border: solid 5px;
-}
+} */
 
 .about-me-links div {
  /*change this later*/
@@ -173,9 +174,9 @@ header nav ul a:hover {
 }
 
 .project-one img {
-    background-image: url(../Photos/Permanent-images/run-buddy.png);
+    /* background-image: url(../Photos/Permanent-images/run-buddy.png); */
     max-width: 100%;
-    max-height: 500px;
+    max-height: 400px;
     height: auto;
     width: auto;
     padding: 0 0px 0 0px;
@@ -196,15 +197,15 @@ header nav ul a:hover {
     flex-wrap: wrap;
 }
 
-.project-one-bio h3  {
-    font-size: 25px;
+.project-one-bio a h3  {
+    font-size: 35px;
     text-align: center;
     padding-bottom: 5px;
 }
 
 .project-one-bio p {
-    font-size: 20px;
-    text-align: justify;
+    font-size: 25px;
+    text-align: center;
 }
 
 /*.project-one-bio h3:hover {
@@ -215,7 +216,7 @@ header nav ul a:hover {
 
 .my-projects h3 {
     text-align: center;
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .other-projects {
@@ -234,17 +235,19 @@ header nav ul a:hover {
 
 .other-projects .secondary-projects img {
     border-radius: 15px;
-    border: solid 2px;
+    border: solid 5px;
     transition-duration: 0.2s;
+    max-width: 100%;
+    max-height: 250px;
 }
 
 .other-projects .secondary-projects:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 1);
 }
 
-.other-projects .secondary-projects img:hover {
+/* .other-projects .secondary-projects img:hover {
     border: solid 5px;
-}
+} */
 
 /*END PROJECTS*/
 
